@@ -9,11 +9,5 @@ public class App
 {
  
 public static void main(String[] args) 
-{
 
-NumberFun numFun = new NumberFun();
-//Part A
-//numFun.isNumberOdd(0)
-
-}
 }
