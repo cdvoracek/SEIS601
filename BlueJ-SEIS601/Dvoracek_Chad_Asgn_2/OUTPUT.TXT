@@ -1,0 +1,35 @@
+App.main({ });
+isNumberOdd is false for the number 0
+isNumberOdd is true for the number 1
+
+isNumberEven is true for the number 0
+isNumberEven is false for the number 1
+
+-1 is odd
+4 is even
+hasSameEvenOddStatus=False. The first number (-1) is odd and the second number (4) is even.
+
+0 is even
+4 is even
+hasSameEvenOddStatus=True. Both numbers (0 & 4) are even.
+
+6 is even
+57 is odd
+hasSameEvenOddStatus=False. The first number (6) is even and the second number (57) is odd.
+
+0 is even
+3 is odd
+hasSameEvenOddStatus=False. The first number (0) is even and the second number (3) is odd.
+
+119 is odd
+-37 is odd
+hasSameEvenOddStatus=True. Both numbers (119 & -37) are odd.
+
+-4 is even
+-3 is odd
+hasSameEvenOddStatus=False. The first number (-4) is even and the second number (-3) is odd.
+
+-202 is even
+0 is even
+hasSameEvenOddStatus=True. Both numbers (-202 & 0) are even.
+

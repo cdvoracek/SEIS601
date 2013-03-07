@@ -38,12 +38,14 @@ public class NumberFun
         if (num2 % 2==0) {num2status = true; declare2="even";}
         else {num2status = false; declare2="odd";}
 
-        if (num1status == num2status){compareboth = "Both numbers ("+num1+" & "+num2+") are "+declare1;}
-        else {compareboth = "The first number ("+num1+") is "+declare1+" and the second number ("+num2+") is "+declare2;}
+        if (num1status == num2status){compareboth = "hasSameEvenOddStatus=True. Both numbers ("+num1+" & "+num2+") are "+declare1+".";}
+        else {compareboth = "hasSameEvenOddStatus=False. The first number ("+num1+") is "+declare1+" and the second number ("+num2+") is "+declare2+".";}
 
         System.out.println (num1+" is "+declare1);
         System.out.println (num2+" is "+declare2);
         System.out.println (compareboth);
+        System.out.println ("\r");
+        
     }
 }
 
