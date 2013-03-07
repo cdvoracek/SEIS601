@@ -12,7 +12,7 @@ public class NumberFun
     boolean isNumberOdd(int num)
    {num=8;
     
-    if (num/2 = type int) 
+    if (num/2 = type.int){ 
         isNumberOdd=false;	
     
     else {isNumberOdd=true;

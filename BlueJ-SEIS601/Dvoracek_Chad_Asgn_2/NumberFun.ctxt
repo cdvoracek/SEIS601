@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=num
+comment0.target=boolean\ isNumberOdd(int)
+comment1.params=num
+comment1.target=boolean\ isNumberEven(int)
+comment2.params=num1\ num2
+comment2.target=void\ hasSameEvenOddStatus(int,\ int)
+numComments=3
