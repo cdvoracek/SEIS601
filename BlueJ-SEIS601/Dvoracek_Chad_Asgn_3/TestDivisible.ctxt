@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=numdiv
+comment0.target=boolean\ divByThree(int)
+comment1.params=numdiv
+comment1.target=boolean\ divByFive(int)
+comment2.params=numdiv
+comment2.target=boolean\ divBySeven(int)
+comment3.params=numdiv
+comment3.target=boolean\ notByAny(int)
+numComments=4

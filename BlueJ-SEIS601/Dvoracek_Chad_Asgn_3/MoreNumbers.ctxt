@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=num
+comment0.target=void\ check357(int)
+comment1.params=start\ end
+comment1.target=void\ checkRange(int,\ int)
+comment1.text=\ Check\ is\ num\ is\ divisible\ by\ 3,\ 5,\ 7,\ or\ any\ combination\ of\ these\ three\r\n\ \ divisors.\r\n
+numComments=2
