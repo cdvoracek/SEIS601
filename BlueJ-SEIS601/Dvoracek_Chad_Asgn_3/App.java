@@ -44,27 +44,7 @@ public class App
      MoreNumbers.checkRange(-10, 0);
      MoreNumbers.checkRange(-7, 5);
      
-        /* Test TestDivisible-The method works 
-     
-            num=3;
-            TestDivisible testDiv = new TestDivisible();
-            boolean div3 = testDiv.divByThree(num);
-          
-            TestDivisible testDiv2 = new TestDivisible();
-            boolean div5 = testDiv2.divByFive(num);
-         
-            TestDivisible testDiv3 = new TestDivisible();
-            boolean div7 = testDiv3.divBySeven(num);
-         
-            TestDivisible testDiv4 = new TestDivisible();
-            boolean divnot = testDiv4.notByAny(num);
-         
-            System.out.println("The number "+num);
-            System.out.println("div3 "+div3);
-            System.out.println("div5 "+div5);
-            System.out.println("div7 "+div7);
-            System.out.println("not by any= "+divnot);
-         */
+        
     }
 
 }
