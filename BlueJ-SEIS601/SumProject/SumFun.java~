@@ -1,0 +1,28 @@
+
+/**
+ * SumFun Class of SumProject
+ * 
+ * @author Chad Dvoracek 
+ * @version 20130404 19:33
+ */
+public class SumFun
+{
+int sumnum;
+
+    public  int Sum(int start, int end)
+    throws Exception
+    
+    {
+        int total = 0;
+        for (sumnum = start; sumnum <=end; sumnum++)
+        {
+        total = total+sumnum;
+        
+        }
+
+   
+        
+        return total;
+    }
+
+}
