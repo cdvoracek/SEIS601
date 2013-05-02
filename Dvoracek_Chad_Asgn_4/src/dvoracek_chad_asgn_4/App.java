@@ -27,13 +27,17 @@ public class App {
     
     po1.adoptPet(po1,pet1, 1);
     
-    
     Pet pet2;
     pet2 = new Pet ("Cat", "Tommy","Fish");
     po1.adoptPet(po1,pet2, 2);
-    //System.out.println (pet1.getPetName());
-    //System.out.println (pet1.getPetName());
-    PetOwner.checkPetNames(po1);
+    
+    po1.dump(po1);
+    
+    
+    
+    
+    
+    //PetOwner.checkPetNames(po1);
     
     //PetOwner.resetPets(po1);
     
