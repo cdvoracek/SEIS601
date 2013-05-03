@@ -4,6 +4,9 @@
  */
 package dvoracek_chad_asgn_4;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *
  * @author Chad
@@ -24,18 +27,45 @@ public class App {
         
     PetOwner po1;
     po1 = new PetOwner("Jackie", "Paper","123 Main Street");
-    
+    po1.setRefName(po1);
+        
     po1.adoptPet(po1,pet1, 1);
+    pet1.setOwner(po1);
     
     Pet pet2;
     pet2 = new Pet ("Cat", "Tommy","Fish");
     po1.adoptPet(po1,pet2, 2);
-    
+    pet2.setOwner(po1);
     po1.dump(po1);
+    //System.out.println(pet2.getOwner());
     
     
+    //start pet set 2
     
+    Pet pet3;
+    pet3 = new Pet("Dinosour","Dino", "Brontosaurus Steaks");
+        
+    PetOwner po2;
+    po2 = new PetOwner("Wilma", "Flinstone","123 Gravel Road");
+    po2.setRefName(po2);
+    po2.adoptPet(po2,pet3, 1);
     
+    pet3.setOwner(po2);
+    Pet pet4;
+    pet4 = new Pet ("Dinosaur", "Barney","Plants");
+    po2.adoptPet(po2,pet4, 2);
+    pet4.setOwner(po2);
+    po2.dump(po2);
+    
+   
+   po1.removePet(pet2);
+   
+   
+   
+   
+    //System.out.println(pet4.getOwner());
+    
+    //pet4.dumpPetInfo(pet4);
     
     //PetOwner.checkPetNames(po1);
     

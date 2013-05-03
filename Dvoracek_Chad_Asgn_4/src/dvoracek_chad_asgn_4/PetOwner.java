@@ -22,8 +22,10 @@ public class PetOwner {
             petThree,
             petFour,
             petFive;
-//private String like leaf in binary
+    private PetOwner refName;
+    static int numberOwners;
 
+//private String like leaf in binary
     // Owner Constructor
     PetOwner(String FirstName, String LastName, String Address) //boolean hasPet,int numPets, boolean hasOwnedPets, int numHistoricalPets
     {
@@ -39,8 +41,27 @@ public class PetOwner {
         this.petThree = null;
         this.petFour = null;
         this.petFive = null;
+        this.refName = null; //store a reference to the PetOwner name.
 
 
+
+
+
+
+    }
+
+    public void setRefName(PetOwner refName) {
+        this.refName = refName;
+        //add PetOnwer to array
+
+        PetOwner[] aryPetOwners;
+        aryPetOwners = new PetOwner[20];
+        int aryNum = numberOwners;
+        PetOwner ownerStore;
+        ownerStore = this.refName;
+        aryPetOwners[aryNum] = ownerStore;
+        numberOwners++;
+        
 
     }
 
@@ -62,7 +83,7 @@ public class PetOwner {
         if (petFive != null) {
             numPets++;
         }
-        System.out.println("Number of Pets: " + numPets);
+        //System.out.println("Number of Pets: " + numPets);
         if (numPets > 0) {
             hasPet = true;
         } else {
@@ -71,7 +92,7 @@ public class PetOwner {
 
         numHistoricalPets++;
 
-        System.out.println(numHistoricalPets);
+        //System.out.println(numHistoricalPets);
     }
 
     //get Methods
@@ -102,6 +123,43 @@ public class PetOwner {
 
     public boolean isHasOwnedPet() {
         return hasOwnedPet;
+    }
+
+    public boolean getPet(String type, String name) {
+
+        
+        int num;
+        String str1, str2;
+        Pet search;
+        for i from 1-5, while <6, i++
+            switch (num)
+                case 1: search = petOne;
+                        str1 = search.getPetName();
+                        str2 = search.getPetType();
+                case 2: search = petTwo;
+                        str1 = search.getPetName();
+                        str2 = search.getPetType();
+                case 3: search = petThree;
+                        str1 = search.getPetName();
+                        str2 = search.getPetType();
+                case 4: search = petFour;
+                        str1 = search.getPetName();
+                        str2 = search.getPetType();
+                case 5: search = petFive;
+                        str1 = search.getPetName();
+                        str2 = search.getPetType();
+                else ; 
+            i++;
+            //if (search !=null)
+            { if (search.getPetNames())==.    return true
+                    then i=6
+            }
+        
+
+
+
+                    
+            
     }
 
     public static void checkPetNames(PetOwner po) {
@@ -144,22 +202,69 @@ public class PetOwner {
 
 
 
-        //else this.petThree=pet;
 
-
-        //this.petTwo = pet;
-
-        /*else if (on.petTwo!=null) this.petTwo =pet;
-         else if (on.petThree!=null) this.petThree = pet;
-         else if (on.petFour!=null) this.petFour = pet;
-         else if (on.petFive!=null) this.petFive = pet;
-         else System.out.println ("Owner has too many pets.");
-         */
-        //this.petOne= pet;
         setHasOwnedPet(true);
         updateData();
 
 
+    }
+
+    public void removePet(Pet p) {
+        String pname = p.getPetName();
+        //System.out.println (pname);
+        //System.out.println (this.petOne.getPetName());
+        String str0 = p.getPetName();
+        if (this.petOne != null)
+        {
+            String str1 = this.petOne.getPetName();
+            if (compare(str0, str1))
+            {p.removeOwner(p);
+            this.petOne = null;}
+        }
+
+        if (this.petTwo != null)
+        {
+            String str2 = this.petTwo.getPetName();
+            boolean bool = compare(str0,str2);
+            if (compare(str0, str2))
+            {p.removeOwner(p);
+            this.petTwo = null;
+           
+            }
+        }
+
+        if (this.petThree != null)
+        {
+            String str3 = this.petThree.getPetName();
+            if (compare(str0, str3))
+            {p.removeOwner(p);
+            this.petThree = null;}
+        }
+
+        if (this.petFour != null)
+        {
+            String str4 = this.petFour.getPetName();
+            if (compare(str0, str4))
+            {p.removeOwner(p);
+            this.petFour = null;}
+        }
+        
+        if (this.petFive != null)
+        {
+            String str5 = this.petFive.getPetName();
+            if (compare(str0, str5))
+            {p.removeOwner(p);
+            this.petFive = null;}
+        }
+    
+     numPets--;
+     this.numPets = numPets;
+     
+
+    }
+
+    public boolean compare(String str1, String str2) {
+        return (str1 == null ? str2 == null : str1.equals(str2));
     }
 
     public void setFirstName(String FirstName) {
@@ -202,19 +307,19 @@ public class PetOwner {
 
 
     }
-   public void dumpOwnerDetails(PetOwner p)
-   {
-   System.out.println("Owner First Name\t\t\t: "+p.FirstName);
-   System.out.println ("Owner Last Name\t\t\t\t: "+p.LastName);
-   System.out.println ("Owner Address\t\t\t\t: "+p.Address);
-   System.out.println ("Owner Number of Current Pets\t\t: "+p.numPets);
-   System.out.println ("Owner Currently Has a Pet\t\t: "+p.hasPet);
-   System.out.println ("Owner Has Ever Owned a Pet\t\t: "+p.hasOwnedPet);
-   System.out.println ("Owner Number of Current-and-Past Pets\t: "+p.numHistoricalPets);
-   
-   
-   }
-    
+
+    public void dumpOwnerDetails(PetOwner p) {
+        System.out.println("Owner First Name\t\t\t: " + p.FirstName);
+        System.out.println("Owner Last Name\t\t\t\t: " + p.LastName);
+        System.out.println("Owner Address\t\t\t\t: " + p.Address);
+        System.out.println("Owner Number of Current Pets\t\t: " + p.numPets);
+        System.out.println("Owner Currently Has a Pet\t\t: " + p.hasPet);
+        System.out.println("Owner Has Ever Owned a Pet\t\t: " + p.hasOwnedPet);
+        System.out.println("Owner Number of Current-and-Past Pets\t: " + p.numHistoricalPets);
+
+
+    }
+
     public void dumpPetDetails(PetOwner p) {
         if (p.petOne != null) {
             System.out.println("\tPet Type:  " + (p.petOne).getPetType());

@@ -14,7 +14,7 @@ public class Pet
 private String PetType;
 private String PetName;
 private String PetFood;
-
+private PetOwner Owner;
 
 
  // Pet Constructor
@@ -24,7 +24,7 @@ private String PetFood;
         this.PetName   =PetName;    
         this.PetType   =PetType;
         this.PetFood   =PetFood;
-        
+        this.Owner     =Owner;
         
         //System.out.println(PetType);
         //System.out.println(PetName);
@@ -51,7 +51,12 @@ private String PetFood;
     public String getPetFood() {
         return PetFood;
     }
- 
+
+    public String getOwner() {
+        return (Owner).getFirstName()+" "+(Owner.getLastName());
+    }
+   
+    
     //Set Pet
     public void setPetType(String PetType) {
         this.PetType = PetType;
@@ -64,6 +69,23 @@ private String PetFood;
     public void setPetFood(String PetFood) {
         this.PetFood = PetFood;
     }
+
+    public void setOwner(PetOwner Owner) {
+        this.Owner = Owner;
+    }
     
+    public void removeOwner(Pet pt)
+    {
+    pt.Owner = null;
+    
+    
+    }
+    public void dumpPetInfo(Pet pt)
+    {
+            System.out.println("\tPet Type:  " + pt.getPetType());
+            System.out.println("\tPet Name:  " + pt.getPetName());
+            System.out.println("\tPet Food:  " + pt.getPetFood());
+            System.out.println("\tPet Owner: " + pt.getOwner());
+    }
     
 }
