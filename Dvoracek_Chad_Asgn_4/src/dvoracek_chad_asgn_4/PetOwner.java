@@ -149,7 +149,7 @@ public class PetOwner {
                         str1 = search.getPetName();
                         str2 = search.getPetType();
                 else ; 
-            i++;
+            i++; //up count I then return.  
             //if (search !=null)
             { if (search.getPetNames())==.    return true
                     then i=6
