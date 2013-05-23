@@ -1,16 +1,16 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package dvoracek_chad_asgn_4;
-
-
 
 /**
- *
- * @author Chad
+ * This is the main App to control the program.
+ * The application will create pets, owners, and link them together
+ * and the owner adopts pets or gets rid of them.  
+ * 
+ * Through constructors and mutators changes can be made to the values
+ * the private fields.  
+ * 
+ * 
+ * @author Chad Dvoracek 
+ * @version 2013-05-03 
  */
-//accessors and mutators for all sub classes whether we use or not
 public class App {
 
     /**
@@ -55,6 +55,8 @@ public class App {
     po2.adoptPet(po2,pet4, 2);
     pet4.setOwner(po2);
     po2.dump(po2);
+    
+    System.out.println("Find pet Tommy the cat.");
         try {
             boolean findPet = po1.getPet("cat", "Tommy");
             } catch (Exception ex) {
@@ -67,7 +69,7 @@ public class App {
            } catch (Exception ex) {
             System.out.println("No such pet "+pet2.getPetName());
         }            
-   
+    System.out.println("Find pet Puff the dragon.");
          try {
             
              boolean  findPet = po1.getPet("dragon", "Puff");
@@ -80,7 +82,7 @@ public class App {
         pet1.setPetFood("Knights in shining armor");
         
         po1.dump(po1);
-        
+         System.out.println("Find pet Dino the dinosaur.");
          try {
             
              boolean  findPet = po2.getPet("dinosaur", "Dino");

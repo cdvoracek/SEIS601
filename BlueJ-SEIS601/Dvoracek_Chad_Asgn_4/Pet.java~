@@ -1,12 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package dvoracek_chad_asgn_4;
 
 /**
- *
- * @author Chad
+ * This class contains the informaton and sub-classes
+ * for the pets.
+ * 
+ * @author Chad Dvoracek 
+ * @version 2013-05-03
  */
 public class Pet 
 {

@@ -1,12 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package dvoracek_chad_asgn_4;
 
 /**
- *
- * @author Chad
+ * This class contiains all the information and classes related to .
+ * the pet owner.
+ * @author Chad Dvoracek 
+ * @version 2013-05-03
  */
 public class PetOwner {
 
@@ -26,7 +23,7 @@ public class PetOwner {
     static int numberOwners;
     static Pet pstore;//hold a value for searching
 
-//private String like leaf in binary
+
     // Owner Constructor
     PetOwner(String FirstName, String LastName, String Address) //boolean hasPet,int numPets, boolean hasOwnedPets, int numHistoricalPets
     {
